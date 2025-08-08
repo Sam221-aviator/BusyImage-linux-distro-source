@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <center>
+            <h1>Building the linux system</h1>
+        </center>
+        <h3>If you want to build the system without reading this book, you can go to this link for a tutorial video.</h3>
+        <a href="https://www.youtube.com/watch?v=QlzoegSuIzg&t=474s">Making Simple Linux Distro from Scratch </a>
+        <h2>
+            Cloning the linux github repository.
+            <h3>Copy this command in your terminal.</h3>
+            <code class="linuxgit">
+                git clone --depth 1 https://github.com/torvalds/linux.git
+            </code>
+            <h3>After copying the github repository, type this.</h3>
+            <code class="linuxgit">cd linux && make menuconfig</code>
+            <h3>Exit the menuconfig and save the changes. Now type this.</h3>
+            <code class="linuxgit">make -j 8</code>
+            <h3>Explaination of <code>make -j 8</code></h3>
+            <h3>This command will let the make command spilt into 8 different jobs. This command will be based of your operating system's number or sometimes your can type 4 as 8. That will work the same too!</h3>
+            <h3>Create a folder outside of your linux directory or it can also be named as boot-files.</h3>
+            <h3>Now copy your bzImage's location to your folder.</h3>
+        </h2>
+    </div>
+</body>
+</html>

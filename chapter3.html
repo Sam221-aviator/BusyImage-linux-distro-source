@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <center>
+            <h2>Booting with QEMU</h2>
+        </center>
+        <h3>After copying both of bzImage and init.cpio file inside your storage folder then we can run it.</h3>
+        <code class="linuxgit">qemu-system-x86_64 boot</code>
+        <h3>After it booted, write this inside the SYSLINUX bootloader.</h3>
+        <code class="linuxgit">/bzImage -initrd=/init.cpio</code>
+        <h3>Wait for a while and it might boot into the init file as the prompt like <code>#</code></h3>
+        <h3>It also has vi, bc and others packages.</h3>
+        <h3>If you want to install languages like Lua, go to nirlichtman's YouTube channel and there might be a video called Making the tinest possible linux distro</h3>
+    </div>
+</body>
+</html>
